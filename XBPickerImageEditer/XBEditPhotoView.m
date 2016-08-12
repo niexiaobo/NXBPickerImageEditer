@@ -7,7 +7,15 @@
 //
 
 #import "XBEditPhotoView.h"
+#import "UIView+XBXYWH.h"
+#define xbscreenWidth [UIScreen mainScreen].bounds.size.width
+#define xbscreenHeight [UIScreen mainScreen].bounds.size.height
 
+#define navHeight 64.0f
+#define tabBarHeight 49.0f
+
+#define EditRectangleViewWidth 250.0f
+#define EditRectangleViewHeight 200.0f
 @interface XBEditPhotoView ()
 @property (nonatomic, strong) UIView *imageBgView;
 
@@ -31,9 +39,9 @@
         _imageBgView = [[UIView alloc]init];
         UIImageView *imageV = [[UIImageView alloc]init];
         
-        float MaxImageH = screenHeight - 64 * 2;
+        float MaxImageH = xbscreenHeight - 64 * 2;
         
-        if (image.size.width < screenWidth) {//扁长形状
+        if (image.size.width < xbscreenWidth) {//扁长形状
             if (image.size.height < MaxImageH) {
                 imageV.frame = CGRectMake(0, 0, image.size.width, image.size.height);
                 
@@ -43,13 +51,13 @@
             }
             
         } else {
-            float MaxHWRatio = MaxImageH / screenWidth; //最大高宽比
+            float MaxHWRatio = MaxImageH / xbscreenWidth; //最大高宽比
             float imageHWRatio = image.size.height / image.size.width;//image高宽比
             if (imageHWRatio > MaxHWRatio) {
                 
-                imageV.frame = CGRectMake(0, 0, screenWidth, MaxImageH);
+                imageV.frame = CGRectMake(0, 0, xbscreenWidth, MaxImageH);
             } else {
-                imageV.frame = CGRectMake(0, 0, screenWidth, imageHWRatio * screenWidth);
+                imageV.frame = CGRectMake(0, 0, xbscreenWidth, imageHWRatio * xbscreenWidth);
 
             }
         }
@@ -76,7 +84,7 @@
     NSArray *nameArray = @[@"取消",@"确定"];
     for (int i=0; i<nameArray.count; i++) {
         UIButton *sureBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        sureBtn.frame = CGRectMake( i==0 ? 20 : screenWidth-70, 20, 50, 50) ;
+        sureBtn.frame = CGRectMake( i==0 ? 20 : xbscreenWidth-70, 20, 50, 50) ;
         sureBtn.backgroundColor = [UIColor clearColor];
         [sureBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [sureBtn setTitle:nameArray[i] forState:UIControlStateNormal];
@@ -103,7 +111,7 @@
 #pragma mark - 裁剪selectView
 - (UIImage *)graphicsEditImage {
     //截屏
-    UIGraphicsBeginImageContextWithOptions(CGSizeMake(screenWidth, self.frame.size.height), YES, 1.0);
+    UIGraphicsBeginImageContextWithOptions(CGSizeMake(xbscreenWidth, self.frame.size.height), YES, 1.0);
     [self.layer renderInContext:UIGraphicsGetCurrentContext()];
     UIImage *uiImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();

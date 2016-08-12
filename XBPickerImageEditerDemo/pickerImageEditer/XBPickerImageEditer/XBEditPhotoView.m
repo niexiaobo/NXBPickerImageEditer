@@ -7,6 +7,15 @@
 //
 
 #import "XBEditPhotoView.h"
+#import "UIView+XBXYWH.h"
+#define screenWidth [UIScreen mainScreen].bounds.size.width
+#define screenHeight [UIScreen mainScreen].bounds.size.height
+
+#define navHeight 64.0f
+#define tabBarHeight 49.0f
+
+#define EditRectangleViewWidth 250.0f
+#define EditRectangleViewHeight 200.0f
 
 @interface XBEditPhotoView ()
 @property (nonatomic, strong) UIView *imageBgView;
