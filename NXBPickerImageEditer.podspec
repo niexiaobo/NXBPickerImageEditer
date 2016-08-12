@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
-                    PickerImageEditer
+                    图片选择器，自定义截图，拖动矩形框，返回需要的图片形状 Image picker, custom theme, drag the rectangular box, return the required shape image
                    DESC
 
   s.homepage     = "https://github.com/niexiaobo/NXBPickerImageEditer"
@@ -91,7 +91,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = 'NXBPickerImageEditer/*'
+  s.source_files  = 'XBPickerImageEditer/*'
   # s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
