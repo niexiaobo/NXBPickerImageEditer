@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="tM3-bK-FkU">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="iel-Rz-5bX">
+            <objects>
+                <navigationController id="tM3-bK-FkU" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rAU-Rp-5bR">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="6wh-5l-QOG" kind="relationship" relationship="rootViewController" id="Xrq-GA-TyA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kni-hF-v4L" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-769" y="-495"/>
+        </scene>
+        <!--编辑选择图片-->
+        <scene sceneID="SuM-pT-ahM">
+            <objects>
+                <viewController id="6wh-5l-QOG" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cdh-Lk-OhX"/>
+                        <viewControllerLayoutGuide type="bottom" id="fOs-PX-CbZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="o6M-lS-XPf">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="编辑选择图片" id="2Cl-4f-y8J"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IWk-JW-uBZ" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="275" y="-503"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,23 @@
+//
+//  PrefixHeader.pch
+//  pickerImageEditer
+//
+//  Created by 博彦科技-聂小波 on 16/8/10.
+//  Copyright © 2016年 聂小波. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "UIImage+XBEdit.h"
+#import "UIView+XBXYWH.h"
+
+#define screenWidth [UIScreen mainScreen].bounds.size.width
+#define screenHeight [UIScreen mainScreen].bounds.size.height
+#define navHeight 64.0f
+#define tabBarHeight 49.0f
+
+#define EditRectangleViewWidth 250.0f
+#define EditRectangleViewHeight 200.0f
+
+#endif /* PrefixHeader_pch */
