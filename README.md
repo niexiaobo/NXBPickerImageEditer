@@ -85,10 +85,3 @@ pickerImageEditer
         }
 3、截图
 
- ![image](https://github.com/niexiaobo/pickerImageEditer/blob/master/SimulatoImages/SimulatoImages1.png)
-
- ![image](https://github.com/niexiaobo/pickerImageEditer/blob/master/SimulatoImages/SimulatoImages2.png)
-
- ![image](https://github.com/niexiaobo/pickerImageEditer/blob/master/SimulatoImages/SimulatoImages3.png)
-
- ![image](https://github.com/niexiaobo/pickerImageEditer/blob/master/SimulatoImages/SimulatoImages4.png)
