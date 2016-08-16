@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
   s.author             = { "niexiaobo" => "flash_lifing@163.com" }
 
   # s.platform     = :ios
-  s.platform     = :ios,'5.0'
+  s.platform     = :ios,'8.0'
 
   s.requires_arc = true
 
