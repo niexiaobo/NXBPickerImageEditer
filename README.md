@@ -1,3 +1,6 @@
+[![Wercker](https://img.shields.io/wercker/ci/wercker/docs.svg?maxAge=2592000)]()
+[![License](https://img.shields.io/github/license/bang590/JSPatch.svg?style=flat)](https://github.com/bang590/JSPatch/blob/master/LICENSE)
+
 # pickerImageEditer
 图片选择器，自定义截图，拖动矩形框，返回需要的图片形状
 pickerImageEditer
